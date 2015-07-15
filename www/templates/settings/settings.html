@@ -1,0 +1,22 @@
+<ion-view>
+<h1>Hello</h1>
+<h5>Settings </h5>
+<div class="list">
+	<label class="item item-radio">
+		<input type="radio" name="group" ng-value= "'C'" ng-model="scale" ng-change="precChange()">
+		<div class="item-content">Celsius</div>
+		<i class="radio-icon ion-checkmark"></i>
+	</label>
+	<label class="item item-radio">
+		<input type="radio" name="group" ng-value="'F'" ng-model="scale" ng-change="precChange()">
+		<div class="item-content">Fahrenheit</div>
+		<i class="radio-icon ion-checkmark"></i>
+	</label>
+</div>
+<h5> Degrees of precision</h5>
+<div class="item range">
+	<i>12&deg</i>
+  <input type="range" ng-model="precision" min="0" max="2">
+  <i>12.34&deg</i>
+</div>
+</ion-view>

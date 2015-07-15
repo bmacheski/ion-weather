@@ -1,0 +1,27 @@
+<ion-view view-title="Weather">
+	<ion-content>
+
+		<div class="card weath-card">
+			<div class="item item-image">
+			<h2>{{city}}</h2>
+				<skycon icon="weather.currently.icon"></skycon>
+			<div>
+			<div class="item item-body">
+				<h2>{{weather.currently.temperature  | number: prec}}</h2>
+				<h2>{{weather.currently.summary }}</h2>
+			</div>
+		</div>
+
+		<div class="list day-day" ng-repeat="day in forecast">
+			<a class="item item-thumbnail-left">
+				<skycon icon="day.icon"></skycon>
+				<h2>{{day.time * 1000 | date: 'EEEE'}}</h2>
+				<p>{{day.summary}}</p>
+			</a>
+			</div>
+		</div>
+
+	<ion-content>
+</ion-view>
+
+

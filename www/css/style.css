@@ -1,1 +1,7 @@
-/* Empty. Add your own CSS if you like */
+.weath-card, .ion-view {
+	margin-top: 60px;
+}
+
+.item.item-thumbnail-left {
+	padding-left: 0;
+}
