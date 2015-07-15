@@ -12,5 +12,5 @@ angular
 					console.log(data)
 				});
 		}, 2000)
-
 	})
+

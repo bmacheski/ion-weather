@@ -53,4 +53,5 @@ angular.module('ionweather.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
-});
+})
+
